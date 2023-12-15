@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Developer Portfolio</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+   <link href="index2.css" rel="stylesheet">
+</head>
+
+<body>
+   <header>
+      <nav>
+         <div class="left">Swati's portfolio</div>
+         <div class="Right">
+            <ul>
+               <a href="/">
+                  <li>Home
+               </a></li>
+               <a href="aboutus.html">
+                  <li>About Me
+               </a></li>
+               
+               <a href="/">
+                  <li>Project
+               </a></li>
+               <a href="contact.html">
+                  <li>Contcact Me
+               </a></li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+   <main>
+      <section class="firstSection">
+         <div class="leftsection">
+            Hi , My name is <span class="purple">Swati</span>
+            <div>and I am a passionate </div>
+
+            <span id="element"></span>
+            <div class="buttons">
+              <a href="resume.pdf" download="resume"> <button class="btn">Download Resume</button></a>
+              <a href="https://github.com/Swati1118" target="_blank"> <button class="btn">Visit Github</button></a>
+
+            </div>
+         </div>
+         <div class="rightsection">
+            <img src="img11.png">
+         </div>
+      </section>
+      <hr>
+      <section class="secondSection">
+         <span class="text-gray">What I have done so far</span>
+         <h1>Work Experience</h1>
+         <div class="box">
+            <div class="vertical">
+               <img class="imgtop" src="tester.png" alt="">
+               <div class="vertical-title">
+                  Test Engineer
+               </div>
+               <div class="vertical-desc">
+                  Test Engineer Intern | [August 2022 - feb 2023]
+                  <b>Comau Pvt Ltd ,Shikhrapur Pune</b>
+                  Worked on Comau In-Grid project
+
+               </div>
+            </div>
+            <div class="vertical">
+               <img class="imgtop" src="htmlimg.png" alt="">
+               <div class="vertical-title">
+                  Front-End Developer
+               </div>
+               <div class="vertical-desc">
+                  Web Developer Intern| [Sep 2021- Oct 2021]
+                  <b>Campus Ambassador internship Lyriclious</b>
+                  During this internship, I developed webpages utilizing HTML, CSS, and JavaScript technologies. 
+                  This experience has enabled me to acquire valuable insights and skills in web development.
+               </div>
+            </div>
+            <div class="vertical"></div>
+            <div class="vertical"></div>
+            <div class="vertical"></div>
+
+
+         </div>
+
+      </section>
+   </main>
+   <footer>
+      <div class="footer">
+         <div class="footer-first">
+            <h3>Swati's Developer Portfolio</h3>
+         </div>
+               <div class="footer-rights">
+        copyrights &#169; swatisportfolio.com | All rights reserved
+      </div>
+   </footer>
+   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+   <!-- Setup and start animation! -->
+   <script>
+      var typed = new Typed('#element', {
+         strings: ['Full stack developer ', 'Web Developer'],
+         typeSpeed: 50,
+      });
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+   <meta charset="utf-8">
+   <title>Glowing Social Icons</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+   <link rel="stylesheet" href="contact2.css">
+</head> 
+<body>
+   <!-- <img class="imgg" alt=""> -->
+   <header>
+      <div class="wrapper">
+         <h1>CONTACT ME</h1>     
+      </div>
+   </header>
+   <div class="container">
+      <ul>
+         <a href="https://www.facebook.com/" target="_blank"><li><i class="fab fa-facebook-f"></i></li></a>
+         <a href="https://www.twitter.com" target="_blank"><li><i class="fab fa-twitter"></i></li></a>
+         <a href="https://www.instagram.com/swati__1318/" target="_blank"><li><i class="fab fa-instagram"></i></li></a>
+        <a href="https:www.linkedin.com/in/swati-mane-001461218" target="_blank"> <li><i class="fab fa-linkedin-in"></i></li></a>
+         <!-- <li><i class="fab fa-youtube"></i></li> -->
+      </ul>
+      <form id="contactForm" action="send_email.php" method="POST">
+         <div class="label-group">
+             <label for="name">Name:</label>
+             <input type="text" id="name" name="name" required>
+         </div>
+         <div class="label-group">
+             <label for="email">Email:</label>
+             <input type="email" id="email" name="email" required>
+         </div>
+         <div class="label-group">
+             <label for="message">Message:</label>
+             <textarea id="message" name="message" required></textarea>
+         </div>
+         <button type="submit">Send</button>
+     </form>
+     
+     
+      <!-- <img src="ing.jpg" alt=""> -->
+   </div>
+   <a href="index.html"><button class="glow-on-hover" type="button">GO HOME</button></a> 
+
+</body>
+
+</html>

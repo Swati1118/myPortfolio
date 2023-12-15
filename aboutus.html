@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        	fieldset{
+		width: 70%;
+        height: 70%;
+        color: #000;
+		margin:80px 250px;
+		padding:0;
+		/*background-image: url(aboutme.jpeg);*/
+        background-color:#6cc0e0;
+        /*#044663;*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      box-shadow: 7px 7px 7px gray;
+      border-radius: 10PX;
+      border: none;
+	}
+    h1{
+        text-align: center;
+        color: whitesmoke;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+    .info{
+        display: flex;
+        color: white;
+        align-items: center;
+        width: auto;
+
+    }
+    .text {
+            flex: 1; /* Allow text to expand and fill available space */
+            padding-left: 30px;
+           font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: 17px;
+           color: #000;
+            
+        }
+
+    
+    .image{
+            flex-shrink: 0; /* Prevent the image from shrinking */
+            margin-left: 20px; /* Add some spacing between text and image */
+            max-width: 200px; /* Set a maximum width for the image */
+            height: 300px;
+            margin-right: 200px;
+           
+    }
+    .circle{
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-left: 130px;
+    }
+/* styles.css 
+@keyframes imageAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+*/
+
+.image-container {
+    text-align: center;
+}
+
+.image {
+    animation: imageAnimation 5s ease-in-out infinite; /* Apply the animation */
+
+}
+.circle{
+    border-radius: 10%; /* Makes the image circular */
+    width: 200px; /* Set the desired width */
+    height: 200px;
+
+}
+
+.html1{
+    margin-top: 20px;
+}
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+
+body {
+  margin: 0;
+  font: 100% / 1.5 Raleway, sans-serif;
+  color: hsl(230, 100%, 95%);
+  background:linear-gradient(45deg, #FFB6C1, #87CEEB, #D8BFD8);
+
+  height: 100vh;
+  display: flex;
+}
+
+h3{
+  margin: auto;
+  font-size: 1.5rem;
+  font-weight: 300;
+  animation: lights 5s 750ms linear infinite;
+    
+  
+}
+.glow-on-hover {
+    width: 80px;
+    height: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-top: 50PX;
+    margin-left: 230PX;
+    box-shadow: 1px 1px lightslategray;
+    
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+   
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <header>
+            <h1><u>About Me</u></h1>
+        </header>
+        <br>
+       
+     
+        <div class="info">
+          <div class="text"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;"Hello , my name is <b>Swati Mane</b>.
+             I reside in Pune, and I recently graduated from GHRCEM Pune earlier this year.I am a dedicated <B>Full stack developer</B>, and I am currently seeking my first full-time job.&nbsp;&nbsp; For the past six months, I have been employed as a Software Tester Intern at COMAU PVT LTD."
+            
+            <br>
+            <br>
+            <h3 >My Skills &rarr;</h3>
+         
+            <img src="htmlimg.png" class="html1" height="40px" width="50px">
+            <img src="11.png" class="html2" height="40px" width="50px">
+            <img src="12.png" class="html3" height="40px" width="50px">
+             <img src="13.png" class="html4" height="40px" width="50px"> 
+             <img src="sqlnew.png" class="html5" height="40px" width="50px"> 
+               
+
+          </div>
+         <div class="image">
+            <img src="swati.jpg" height="150px" width="120px" class="circle" >
+           <a href="index.html"><button class="glow-on-hover" type="button">GO HOME</button></a> 
+
+
+         </div> 
+        </div>
+           
+
+        
+       
+                 
+
+                    
+        </fieldset>
+    </form> 
+</body>
+</html>

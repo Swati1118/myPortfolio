@@ -1,0 +1,83 @@
+Modifiers in java:
+
+Modifiers are Keywords that are added to change meaning of a defination. In java, modifiers are categorized into two types,
+1.Access Control modifier.
+2.Non Access modifier.
+
+
+
+1.Access control modifier.....
+             Java Language has four access modifier to control access levels for classes,variable methods and constructor.
+
+              * Default :- Default has scope  only inside same pacakage.
+              * Public :-  Public scope is visible everywhere
+             * Protected :- Protected has scope within the package and all sub classes
+              * Private :-  Private has scope only within the classes               
+               
+      
+2) Non-Access Modifier
+    Non -access modifiers do not change the accessbility of variables and methhods, but they do proide them special properties.
+    Non-access modifiers are of 5 types,
+    1. Final
+    2.Static.
+    3.Transient.
+    4.Synchronized.
+    5.Volatile
+
+1.Final
+
+ The final keyword in java is used to restric the user. The java final keyword can be used in many context. Final can be:
+ # Variable
+# method
+# class
+
+2. Static
+  
+   static modifiers are used to create class variable and class methods which can be accessed without instance of a class .
+
+
+Static with variables:--
+    static variables are defined as a class members that can be accessed without any object of that class.
+    static varible has only one single storage .All the object of the class having static varible will have the same instatnce of static
+    variable.static variables are initialized only once.
+
+Static method:
+  A method can be declared as static .static methods do not need instance ot its class for being accessed main() method is the most common 
+ example of static method .main() method is declared as static because it is called before any object of the class is created.
+ 
+Static block:-
+  static block is used to initialize static data member.static block executes .
+
+
+
+
+Synchronization:
+           At times when more than one thread try to access a shared resource , we need to ensure that resource will be used 
+          by only one thread at a time .The process by which this is achived is called synchronization.
+            Synchronizaton keyword in java create a block of code refered to as critical seection .
+        Every java object with a critical ection of code gets a lock associated with the object to enter critical section a thread need to obtain 
+the corresponding object lock.
+     General syntax:_
+                  synchronized (object)
+{
+//statement to be synchronized
+}
+
+Why we use Synchronization ?
+If we do not use synchronization and let two or more threds access a shared resourse at the same time,it will lead to distored reults.
+
+Synchronized keyword:
+TO synchronize above program ,we must serialie access to the shared display() method ,making it available to only one thred at time. This is 
+done by using keyword synchronied with display() method 
+      
+ Enumeration :
+ Enumeratiion was   added to java language in JDK5 .Enumeration means a list of named constant .In java ,enumeration defines a class type .
+An Enumeration defines a class type .An Enumeration can have constructor ,methods and instance variables.
+It is created using  enum keyword .Each enumeration constant is public ,static and final by default .
+Eevn though enumaration defines a class type and have constructors ,you do not instantiate an  enum using new .Enumeration variables 
+are used and declard in much a same way as you do a primitive variable.
+
+enum (enum_name)subject
+{
+JAva,cpp,c,dmbm
+}     
